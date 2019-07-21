@@ -1,0 +1,55 @@
+
+
+$smallcolor: #3bbfce;
+$bigcolor: #f7d9d7; 
+
+@media (max-width: 600px) {
+  body {
+    background-color: $smallcolor;
+    margin-top: 60px;
+	margin-right: 10px;
+	margin-left: 10px;
+
+  }
+                  h1::before {
+                    content: "Hi there! Please note that this site has been designed for larger screens. Although small screen devices have access to all content, you'll have better experience with desktop or laptop computers.";
+                }
+}
+
+@media (min-width: 601px) {
+  body {
+    background-color: $bigcolor;
+    margin-top: 60px;
+	margin-right: 30px;
+	margin-left: 30px;
+  }
+                  h1::before {
+                    content: "Welcome!";
+                }
+}
+.small {
+	font-size: 10px;
+}
+
+#subtitle {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	text-align: center;
+
+	h2 {
+		border-style: solid;
+  		border-width: 3px;
+  		padding: 5px;
+  		display: inline-block;
+	}
+}
+
+footer {
+	@extend #subtitle;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
